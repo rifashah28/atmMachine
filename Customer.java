@@ -39,8 +39,18 @@ public class Customer {
 	 */
 	private void setPinNumber(String pinNumber) {
 		// TODO Auto-generated method stub
-		
+		if (pinNumber != null) {
+			this.pinNumber = pinNumber;
+		} // End of if-statement
 	} // End of setPinNumber
+	
+	/**
+	 * Gets the pin Number for the Account.
+	 * @return pinNumber. Pin Number as a String.
+	 */
+	public String getPinNumber() {
+		return pinNumber;
+	} // End of getPinNumber
 	
 	/**
 	 * Sets the Account Number of the Customer.
@@ -48,8 +58,18 @@ public class Customer {
 	 */
 	private void setAccountNumber(String accountNumber) {
 		// TODO Auto-generated method stub
-		
+		if (accountNumber != null) {
+			this.accountNumber = accountNumber;
+		} // End of if-statement
 	} // End of setAccountNumber
+	
+	/**
+	 * Gets the Account Number of the Customer.
+	 * @return accountNumber. Account Number as a String.
+	 */
+	public String getAccountNumber() {
+		return accountNumber;
+	} // End of getAccountNumber
 
 	/**
 	 * Sets the Last Name of the Customer.
@@ -57,8 +77,18 @@ public class Customer {
 	 */
 	private void setLastName(String lastName) {
 		// TODO Auto-generated method stub
-		
+		if (lastName != null) {
+			this.lastName = lastName;
+		} // End of if-statement
 	} // End of setLastName
+	
+	/**
+	 * Gets the Last Name of the Customer.
+	 * @return lastName. Last Name as a String.
+	 */
+	public String getLastName() {
+		return lastName;
+	} // End of getLastName
 
 	/**
 	 * Sets the First Name of the Customer.
