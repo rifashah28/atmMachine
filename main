@@ -1,0 +1,15 @@
+package atmMachine;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		Customer customer = new Customer("joe","jane","1","1");
+		ATM atm = new ATM();
+		
+		//assuming card and pin are correct
+		atm.menu(customer);
+		System.out.println("end");
+	}
+
+}
