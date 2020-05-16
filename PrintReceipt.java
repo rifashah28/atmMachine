@@ -1,44 +1,28 @@
 /**
- * Description: Receipt Printer for the ATM.
- * CECS 343 SPRING 2020
- * ATM Machine: Print Receipt
+ * Description: The class handles the printing of the receipts.
+ * CECS 343 Spring 2020
+ * ATM Machine: PrintReceipt
  * @author Nathaniel Monte De Ramos and Rifa Safeer Shah
- * Date: 05/05/2020
+ * Date: 05/06/2020
  */
 
 package atmMachine;
 
-
-
 import java.util.Scanner;
 
+public class PrintReceipt {
 
-
-public class PrintReceipt
-
-{
-
-	public static void printReceipt()
-
-	{
+	public static void printReceipt() {
 
 		Scanner scan = new Scanner(System.in);
-
-		
 
 		System.out.println("Would you like a Receipt?\n1. Yes\n2. No");
 
 		int choice = scan.nextInt();
 
-		
+		if(choice == 1) {
 
-		if(choice == 1) 
-
-		{
-
-			System.out.println("ATM");
-
-			System.out.println("Date:");
+			System.out.println("====================ATM====================");
 
 			System.out.println("Location: LONG-BEACH-CA");
 
@@ -54,16 +38,12 @@ public class PrintReceipt
 
 			System.out.println("For questions, call RIFA\nBusiness customers call NATHAN");
 
-		}
+			System.out.println("===========================================");
+		} // End of if-statement
 
-		else 
-
-		{
+		else {
 
 			System.out.println("Thank you for using our ATM. Have a nice day.");
-
-		}
-
-	}
-
-}
+		} // End of else-statement
+	} // End of printReceipt
+} // End of PrintReceipt
