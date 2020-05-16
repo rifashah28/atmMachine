@@ -1,63 +1,50 @@
 /**
- * Description: Carry out the deposit transaction in the ATM machine.
- * CECS 343 SPRING 2020
+ * Description: The class that allows customers to deposit money into the account.
+ * CECS 343 Spring 2020
  * ATM Machine: Deposit
  * @author Nathaniel Monte De Ramos and Rifa Safeer Shah
- * Date: 05/05/2020
+ * Date: 05/06/2020
  */
 
 package atmMachine;
 
-
-
 import java.util.Scanner;
 
+/**
+ * Adds amount to the account.
+ */
+public class Deposit {
 
+	public static void deposit() {
 
-//adds and amount to the account
+		/* Initial for deposit amount */
+		double depositAmmount;
 
-public class Deposit 
+		/* Initial for the account balance */
+		double accBalance;
 
-{
+		System.out.println("===============DEPOSIT===============");
 
-	static String name = "Deposit to Balance";
+		/* For scanning the user input for deposit */
+		Scanner scan = new Scanner(System.in);
 
-	public static void deposit()
-
-	{
-
-		double depositAmmount;//initial for the deposit ammount
-
-		double accBalance;//initial for the account balance
-
-		
-
-		Scanner scan = new Scanner(System.in);//for scanning the user input for deposit
-
-		System.out.println("Your balance is $" + Account.getBalance());//show the user the balance before deposit
+		/* Show the user the balance before deposit */
+		System.out.println("Your balance is $" + Account.getBalance());
 
 		System.out.println("How much would you like to deposit?");
-
 		
+		/* Taking in the deposit */
+		depositAmmount = scan.nextDouble();
 
-		depositAmmount = scan.nextDouble();//taking in the deposit
+		/* The new balance */
+		accBalance = Account.getBalance() + depositAmmount;
 
-		accBalance = Account.getBalance() + depositAmmount;//the new balance 
+		/* Print out the new balance */
+		System.out.println("Your new balance is $" + accBalance);
 
-		
+		/* Set the customer balance to the new balance */
+		Account.setBalance(accBalance);
 
-		System.out.println("Your new balance is $" + accBalance);//print out new balance
-
-		Account.setBalance(accBalance);//set the customer balance to the new 	
-
-		
-
-	}
-
-}
-
-
-
-
-
-// DO SOME TEST TO CHECK IF ITS RIGHT
+		System.out.println("=====================================");
+	} // End of deposit
+} // End of Deposit class
