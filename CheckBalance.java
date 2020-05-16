@@ -1,40 +1,26 @@
 /**
- * Description: Carry out the check balance transaction in the ATM machine.
- * CECS 343 SPRING 2020
- * ATM Machine: Check Balance
+ * Description: The class that checks balance in the account.
+ * CECS 343 Spring 2020
+ * ATM Machine: CheckBalance
  * @author Nathaniel Monte De Ramos and Rifa Safeer Shah
- * Date: 05/05/2020
+ * Date: 05/06/2020
  */
-
 
 package atmMachine;
 
+/**
+ * Checks the balance in the account.
+ */
+public class CheckBalance {
 
-
-//checks the balance in the account
-
-public class CheckBalance
-
-{
-
-	public static void checkBalance()
-
-	{
+	public static void checkBalance() {
 
 		System.out.println("===============CHECK BALANCE===============");
 
-		System.out.println("Card Number : " + Account.getCardNum());
+		System.out.println("Card Number          : " + Account.getCardNum());
 
-		System.out.println("Balance     : " + Account.getBalance());
+		System.out.println("Checking Balance     : " + Account.getBalance());
 
 		System.out.println("===========================================");
-
-	}
-
-}
-
-
-
-//ACT DIAGRAM FOR CHECH BALANCE NEEDS TO CHANGE... 
-
-//TAKE ERROR PATH OUT
+	} // End of checkBalance
+} // End of CheckBalance class
